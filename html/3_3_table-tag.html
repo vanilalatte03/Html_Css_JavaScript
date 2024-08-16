@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Tag</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <h1>Table 기본</h1>
+      <caption>
+        프로필 테이블
+      </caption>
+      <tr>
+        <th>이름</th>
+        <th>취미</th>
+        <th>특기</th>
+      </tr>
+      <tr>
+        <td>지호1</td>
+        <td>코딩</td>
+        <td>잠자기</td>
+      </tr>
+      <tr>
+        <td>지호2</td>
+        <td>책읽기</td>
+        <td>놀기</td>
+      </tr>
+    </table>
+    <hr />
+    <h1>table 그룹 태그</h1>
+    <table>
+      <caption>
+        학급 점수
+      </caption>
+      <colgroup>
+        <col width="40px" />
+        <col />
+        <col />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>반</th>
+          <th>이름</th>
+          <th>국어</th>
+          <th>영어</th>
+          <th>수학</th>
+          <th>코딩</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1반</td>
+          <td>지호</td>
+          <td>90</td>
+          <td>100</td>
+          <td>90</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>1반</td>
+          <td>지호2</td>
+          <td>90</td>
+          <td>100</td>
+          <td>90</td>
+          <td>80</td>
+        </tr>
+      </tbody>
+      <tr>
+        <td>1반</td>
+        <td>지호3</td>
+        <td>90</td>
+        <td>100</td>
+        <td>90</td>
+        <td>80</td>
+      </tr>
+    </table>
+  </body>
+</html>
