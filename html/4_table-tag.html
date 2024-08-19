@@ -14,6 +14,12 @@
         border: 1px solid black;
         padding: 12px;
       }
+      .col1 {
+        width: 80px;
+      }
+      .col2 {
+        background-color: yellow;
+      }
     </style>
   </head>
   <body>
@@ -45,12 +51,12 @@
         학급 점수
       </caption>
       <colgroup>
-        <col width="40px" />
-        <col />
-        <col />
-        <col />
-        <col />
-        <col />
+        <col class="col1" />
+        <col class="col2" />
+        <col class="col3" />
+        <col class="col4" />
+        <col class="col5" />
+        <col class="col6" />
       </colgroup>
       <thead>
         <tr>
@@ -64,7 +70,7 @@
       </thead>
       <tbody>
         <tr>
-          <td>1반</td>
+          <td rowspan="3">1반</td>
           <td>지호</td>
           <td>90</td>
           <td>100</td>
@@ -72,22 +78,30 @@
           <td>80</td>
         </tr>
         <tr>
-          <td>1반</td>
           <td>지호2</td>
           <td>90</td>
           <td>100</td>
           <td>90</td>
           <td>80</td>
         </tr>
+        <tr>
+          <td>지호3</td>
+          <td>90</td>
+          <td>100</td>
+          <td>90</td>
+          <td>80</td>
+        </tr>
       </tbody>
-      <tr>
-        <td>1반</td>
-        <td>지호3</td>
-        <td>90</td>
-        <td>100</td>
-        <td>90</td>
-        <td>80</td>
-      </tr>
+      <tfoot>
+        <tr>
+          <td>1반</td>
+          <td>평균</td>
+          <td>90</td>
+          <td>100</td>
+          <td>90</td>
+          <td>80</td>
+        </tr>
+      </tfoot>
     </table>
   </body>
 </html>
