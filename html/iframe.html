@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 및 영상 갤러리</title>
+    <style>
+      .thumbnail {
+        width: 100px;
+        cursor: pointer;
+      }
+      iframe {
+        width: 600px;
+        height: 400px;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>이미지 및 영상 갤러리</h1>
+
+    <!-- 아이프레임 영역 -->
+    <iframe id="displayFrame" src=""></iframe>
+
+    <!-- 썸네일 이미지 갤러리 -->
+    <h2>이미지 갤러리</h2>
+    <img
+      src="thumbnail1.jpg"
+      alt="작은 이미지 1"
+      class="thumbnail"
+      onclick="showImage('largeImage1.jpg')"
+    />
+    <img
+      src="thumbnail2.jpg"
+      alt="작은 이미지 2"
+      class="thumbnail"
+      onclick="showImage('largeImage2.jpg')"
+    />
+
+    <!-- 썸네일 영상 갤러리 -->
+    <h2>영상 갤러리</h2>
+    <img
+      src="videoThumbnail1.jpg"
+      alt="작은 영상 썸네일 1"
+      class="thumbnail"
+      onclick="showVideo('https://www.youtube.com/embed/sampleVideo1')"
+    />
+    <img
+      src="videoThumbnail2.jpg"
+      alt="작은 영상 썸네일 2"
+      class="thumbnail"
+      onclick="showVideo('https://www.youtube.com/embed/sampleVideo2')"
+    />
+
+    <!-- 스크립트 -->
+    <script>
+      function showImage(imageSrc) {
+        document.getElementById('displayFrame').src = imageSrc;
+      }
+
+      function showVideo(videoSrc) {
+        document.getElementById('displayFrame').src = videoSrc;
+      }
+    </script>
+  </body>
+</html>
